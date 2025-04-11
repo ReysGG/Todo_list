@@ -1,0 +1,189 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* supaya item tetap dari atas */
+    min-height: 100vh; /* bisa tinggi melebihi layar */
+    padding: 30px 0;
+    margin: 0;
+    background: #fff;
+}
+
+
+.Todo_List{
+    background-color: #D4C9BE;
+    width: 80%;
+    max-width: 900px;
+    margin: 10px 20px 10px 20px;
+    border-radius: 20px;
+}
+
+.Todo_List h1{
+    text-shadow: 0px 2px 15px rgb(255, 255, 255);
+    margin-bottom: 0px;
+    color: #030303;
+    font-size: 50px;
+    text-align: center;
+}
+
+.Todo_List p {
+    color: #030303;
+    text-shadow: 0px 2px 15px rgba(255, 255, 255, 0.534);
+    margin: -3px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.Todo_List .isi_tugas{
+    border-radius: 10px;
+    background: #123458;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Todo_List .isi_tugas input{
+    padding: 10px 0px;
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.Todo_List .isi_tugas #Tambahkan{
+    border: none;
+    font-size: 20px;
+    background-color: chartreuse;
+    width: 80%;
+    padding: 10px 0px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.Todo_List .searching_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searching_list input{
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: padding 0.25s, box-shadow 0.25s;
+}
+
+.searching_list input:hover{
+    padding: 10px 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.144);
+}
+
+
+.Todo_List .List_List{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(202, 201, 201);
+    padding: 20px 0px;
+}
+
+.Todo_List ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Todo_List li {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    align-items: center;
+    padding: 5px 20px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.25s, padding 0.25s, opacity 0.25s;
+}
+
+.Todo_List li:hover{
+    padding: 10px 30px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.144);
+}
+
+.Todo_List .isi_todo input{
+    width: 100%;
+    font-size: 20px;
+}
+
+.Todo_List .isi_todo .edit{
+    display: flex;
+    justify-content: center;
+}
+
+.Todo_List .isi_todo .edit a{
+    border-radius: 5px;
+    background-color: red;
+    margin: 10px;
+    padding: 10px 10px;
+    transition: padding 0.25s, background-color 0.25s;
+}
+
+.Todo_List .isi_todo .edit a:hover{
+    background-color: rgb(255, 106, 106);
+}
+
+.Todo_List .isi_todo .edit .Modify{
+    background-color: rgb(44, 187, 0);
+}
+
+.Todo_List .isi_todo .edit .Modify:hover{
+    background-color: rgb(54, 209, 6);
+}
+
+.tombol_delete{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 00px;
+    box-sizing: border-box;
+}
+
+.tombol_delete .Delete_all{
+    color: white;
+    width: 80%;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 40px;
+    border: none;
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s, box-shadow 0.25s;
+}
+
+.tombol_delete .Delete_all:hover{
+    background-color: rgb(255, 106, 106);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.144);
+}
+
